@@ -1,6 +1,7 @@
 {
     "name": "rulepackjs",
     "version": "0.1.0",
+    "type": "module",
     "description": "Rimworld rule pack like story-grammar generation library for JavaScript/TypeScript",
     "main": "./dist/index.js",
     "module": "./dist/index.mjs",
@@ -41,7 +42,7 @@
         "typescript",
         "library"
     ],
-    "author": "",
+    "author": "lwyj123",
     "license": "MIT",
     "devDependencies": {
         "@changesets/cli": "^2.27.9",
