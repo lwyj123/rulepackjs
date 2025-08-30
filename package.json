@@ -1,0 +1,70 @@
+{
+    "name": "rulepackjs",
+    "version": "0.1.0",
+    "description": "Rimworld rule pack like story-grammar generation library for JavaScript/TypeScript",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsup",
+        "build:watch": "tsup --watch",
+        "dev": "tsup --watch",
+        "test": "vitest",
+        "test:coverage": "vitest --coverage",
+        "test:ui": "vitest --ui",
+        "lint": "eslint src --ext .ts,.tsx",
+        "lint:fix": "eslint src --ext .ts,.tsx --fix",
+        "format": "prettier --write \"src/**/*.{ts,tsx,json,md}\"",
+        "format:check": "prettier --check \"src/**/*.{ts,tsx,json,md}\"",
+        "type-check": "tsc --noEmit",
+        "prepublishOnly": "npm run build",
+        "release": "changeset publish",
+        "version": "changeset version"
+    },
+    "keywords": [
+        "story-generation",
+        "grammar",
+        "procedural",
+        "narrative",
+        "rimworld",
+        "rulepack",
+        "typescript",
+        "library"
+    ],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "@changesets/cli": "^2.27.9",
+        "@types/node": "^22.7.7",
+        "@typescript-eslint/eslint-plugin": "^8.8.1",
+        "@typescript-eslint/parser": "^8.8.1",
+        "@vitest/coverage-v8": "^2.1.2",
+        "@vitest/ui": "^2.1.2",
+        "eslint": "^9.12.0",
+        "prettier": "^3.3.3",
+        "tsup": "^8.3.0",
+        "typescript": "^5.6.3",
+        "vitest": "^2.1.2"
+    },
+    "engines": {
+        "node": ">=18"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lwyj123/rulepackjs.git"
+    },
+    "bugs": {
+        "url": "https://github.com/lwyj123/rulepackjs/issues"
+    },
+    "homepage": "https://github.com/lwyj123/rulepackjs#readme"
+}
